@@ -8,7 +8,6 @@
 #define FIXRALT 2
 
 / {
-
     ZMK_MACRO(bt_pair0, bindings = <&bt BT_PAIR 0>;)
     ZMK_MACRO(bt_pair1, bindings = <&bt BT_PAIR 1>;)
     ZMK_MACRO(bt_pair2, bindings = <&bt BT_PAIR 2>;)
