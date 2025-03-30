@@ -9,15 +9,6 @@
 #define FIXRALT 2
 
 / {
-    ZMK_MACRO(bt_pair0, bindings = <&bt BT_PAIR 0>;)
-    ZMK_MACRO(bt_pair1, bindings = <&bt BT_PAIR 1>;)
-    ZMK_MACRO(bt_pair2, bindings = <&bt BT_PAIR 2>;)
-    ZMK_MACRO(bt_pair3, bindings = <&bt BT_PAIR 3>;)
-    ZMK_MACRO(bt_recon_0, bindings = <&bt BT_SEL 0>;)
-    ZMK_MACRO(bt_recon_1, bindings = <&bt BT_SEL 1>;)
-    ZMK_MACRO(bt_recon_2, bindings = <&bt BT_SEL 2>;)
-    ZMK_MACRO(bt_recon_3, bindings = <&bt BT_SEL 3>;)
-
     keymap {
         compatible = "zmk,keymap";
 
