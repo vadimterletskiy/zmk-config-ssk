@@ -19,7 +19,7 @@ For the hotswap pins & sockets, to clear the backplate of the SSK go with the re
 
 As for materials (some might not be the best selection, but had to work with what I already have)
 1. nice!nano v2
-2. 74HC595
+2. 74HC595 + 2PCS
 3. https://sg.element14.com/amp-te-connectivity/5-520315-8/connector-ffc-fpc-8pos-2-54mm/dp/2890849
 4. https://sg.element14.com/amp-te-connectivity/6-520315-6/conn-ffc-fpc-16pos-1row-2-54mm/dp/3791494
 5. https://sg.element14.com/c-k-components/os102011ma1qn1/switch-spdt-0-1a-12v-pcb-r-a/dp/1201431
