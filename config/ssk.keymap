@@ -7,6 +7,52 @@
 #define COMMON 1
 
 / {
+    ZMK_MACRO(bt_pair0, bindings = <&bt BT_PAIR 0>;)
+    ZMK_MACRO(bt_pair1, bindings = <&bt BT_PAIR 1>;)
+    ZMK_MACRO(bt_pair2, bindings = <&bt BT_PAIR 2>;)
+    ZMK_MACRO(bt_pair3, bindings = <&bt BT_PAIR 3>;)
+    ZMK_MACRO(bt_recon_0, bindings = <&bt BT_SEL 0>;)
+    ZMK_MACRO(bt_recon_1, bindings = <&bt BT_SEL 1>;)
+    ZMK_MACRO(bt_recon_2, bindings = <&bt BT_SEL 2>;)
+    ZMK_MACRO(bt_recon_3, bindings = <&bt BT_SEL 3>;)
+    
+    bt_pair_0: bt_pair_0 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "bt_pair0";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <3000>;  // delay amount in ms
+        bindings = <&bt_pair0>, <&bt_recon_0>;
+    };
+    bt_pair_1: bt_pair_1 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "bt_pair1";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <3000>;  // delay amount in ms
+        bindings = <&bt_pair1>, <&bt_recon_1>;
+    };
+    bt_pair_2: bt_pair_2 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "bt_pair2";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <3000>;  // delay amount in ms
+        bindings = <&bt_pair2>, <&bt_recon_2>;
+    };
+    bt_pair_3: bt_pair_3 {
+        compatible = "zmk,behavior-hold-tap";
+        label = "bt_pair3";
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <3000>;  // delay amount in ms
+        bindings = <&bt_pair3>, <&bt_recon_3>;
+    };
+    uc:user_custom {
+        compatible = "zmk,behavior-key-press";
+        label ="user_custom";
+        #binding-cells =<1>;
+    };
     uc:user_custom {
         compatible = "zmk,behavior-key-press";
         label ="user_custom";
@@ -49,8 +95,8 @@
                  &trans                &kp C_BRIGHTNESS_DEC &kp C_BRIGHTNESS_INC &kp LG(TAB)     &kp LG(E)   &kp C_AC_SEARCH     &kp LG(L)       &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT      &kp C_MUTE    &kp C_VOLUME_DOWN &kp C_VOLUME_UP &kp LG(I)       &trans          &trans          &trans          &trans          &trans          &trans          &trans
             /*  |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|  */
             /*   &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL       &kp BSPC        &kp INS         &kp HOME        &kp PG_UP       &kp KP_NLCK     &kp KP_SLASH    &kp KP_ASTERISK &kp KP_MINUS                      */
-            /*   &trans          &bt_pair_0 0 0  &bt_pair_1 0 0  &bt_pair_2 0 0  &bt_pair_3 0 0  &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp C_AL_CALC   &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans                            */    
-                 &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp C_AL_CALC   &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans                            
+                 &trans          &bt_pair_0 0 0  &bt_pair_1 0 0  &bt_pair_2 0 0  &bt_pair_3 0 0  &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp C_AL_CALC   &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans                            
+            /*   &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp C_AL_CALC   &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans                            */    
             /*  |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|  */
             /*   &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp LBKT        &kp RBKT        &kp BSLH        &kp DEL         &kp END         &kp PG_DN       &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_PLUS                       */
                  &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp INS         &trans          &trans          &trans          &trans          &kp LG(LS(S))   &bt BT_CLR      &trans          &trans          &trans          &trans          &trans          &trans   

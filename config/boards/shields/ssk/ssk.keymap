@@ -9,7 +9,7 @@
 
 / {
     // hold-tap that doesn't do anything on tap and BT_CLR on hold
-    /*bt_pair_0: bt_pair_0 {
+    bt_pair_0: bt_pair_0 {
         compatible = "zmk,behavior-hold-tap";
         label = "bt_pair0";
         #binding-cells = <2>;
@@ -40,7 +40,7 @@
         flavor = "tap-preferred";
         tapping-term-ms = <3000>;  // delay amount in ms
         bindings = <&bt_pair3>, <&bt_recon_3>;
-    };*/
+    };
     uc:user_custom {
         compatible = "zmk,behavior-key-press";
         label ="user_custom";
