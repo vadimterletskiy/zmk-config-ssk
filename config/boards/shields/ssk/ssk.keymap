@@ -9,7 +9,7 @@
 
 / {
     // hold-tap that doesn't do anything on tap and BT_CLR on hold
-    bt_pair_0: bt_pair_0 {
+  /*  bt_pair_0: bt_pair_0 {
         compatible = "zmk,behavior-hold-tap";
         label = "bt_pair0";
         #binding-cells = <2>;
@@ -41,6 +41,7 @@
         tapping-term-ms = <3000>;  // delay amount in ms
         bindings = <&bt_pair3>, <&bt_recon_3>;
     };
+    */
     uc:user_custom {
         compatible = "zmk,behavior-key-press";
         label ="user_custom";
@@ -55,10 +56,10 @@
             /* JAMES DONKEY 619  */          
             /*  |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|  */
             /*   &kp ESC                         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12         &kp F13         &kp PSCRN       &kp SLCK        &kp PAUS        &kp C_AL_CALC   &uc LG(TAB)     &uc LG(LC(LEFT)) &uc LG(LC(RIGHT))*/
-                 &kp ESC                         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12         &kp F13         &kp PSCRN       &kp SLCK        &kp PAUS        &kp C_AL_CALC   &uc LG(TAB)        &uc LG(LC(LEFT))  &uc LG(LC(RIGHT))
+                 &kp ESC                         &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12         &kp F13         &kp PSCRN       &kp SLCK        &kp PAUS        &kp C_AL_CALC   &uc LG(TAB)     &uc LG(LC(LEFT))  &uc LG(LC(RIGHT))
             /*  |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|  */
             /*   &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL       &kp BSPC        &kp INS         &kp HOME        &kp PG_UP       &kp KP_NLCK     &kp KP_SLASH    &kp KP_ASTERISK &kp KP_MINUS                      */
-                 &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6         &kp N7           &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL        &kp BSPC        &kp INS        &kp HOME        &kp PG_UP       &kp KP_NLCK     &kp KP_SLASH        &kp KP_ASTERISK &kp KP_MINUS
+                 &kp GRAVE       &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6         &kp N7           &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL        &kp BSPC        &kp INS        &kp HOME        &kp PG_UP       &kp KP_NLCK     &kp KP_SLASH    &kp KP_ASTERISK &kp KP_MINUS
             /*  |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|  */
             /*   &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp LBKT        &kp RBKT        &kp BSLH        &kp DEL         &kp END         &kp PG_DN       &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_PLUS                       */
                  &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp LBKT        &kp RBKT        &kp BSLH        &kp DEL         &kp END         &kp PG_DN       &kp KP_N7       &kp KP_N8       &kp KP_N9       &kp KP_PLUS
