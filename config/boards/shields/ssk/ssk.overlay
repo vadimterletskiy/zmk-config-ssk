@@ -76,8 +76,9 @@ default_kscan: kscan {
             , <&shifter 1 GPIO_ACTIVE_LOW> //c14
             , <&shifter 0 GPIO_ACTIVE_LOW> //c15
             , <&pro_micro 20 GPIO_ACTIVE_LOW> //c16               
-            , <&pro_micro 18 GPIO_ACTIVE_LOW> //c17 // todo fix (swap)
-            , <&pro_micro 19 GPIO_ACTIVE_LOW> //c18 // todo fix (swap)
+            , <&pro_micro 19 GPIO_ACTIVE_LOW> //c17 // todo fix (swap)
+            , <&pro_micro 18 GPIO_ACTIVE_LOW> //c18 // todo fix (swap)
+            
             ;
     };
 
