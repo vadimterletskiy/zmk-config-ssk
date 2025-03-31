@@ -7,6 +7,11 @@
 #define COMMON 1
 
 / {
+    uc:user_custom {
+        compatible = "zmk,behavior-key-press";
+        label ="user_custom";
+        #binding-cells =<1>;
+    };
     keymap {
         compatible = "zmk,keymap";
 

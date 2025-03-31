@@ -40,12 +40,12 @@
         flavor = "tap-preferred";
         tapping-term-ms = <3000>;  // delay amount in ms
         bindings = <&bt_pair3>, <&bt_recon_3>;
-    };
+    };*/
     uc:user_custom {
         compatible = "zmk,behavior-key-press";
         label ="user_custom";
         #binding-cells =<1>;
-    };*/
+    };
 
     keymap {
         compatible = "zmk,keymap";
